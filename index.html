@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>《水母之海》分HO測試</title>
+  <!-- 这里引入 CSS 文件 -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+  <!-- 首页 -->
+  <div id="home-section">
+    <h1>《水母之海》分HO測試</h1>
+    <img src="thefish.jpg" style="width: 100%; max-width: 300px; border-radius: 10px; margin-bottom: 20px;">
+    <div class="subtitle">［ 欢迎来到枝川市羽正高中神秘部^v^ ］</div>
+    <div class="desc">
+      更好的東西总是包裹于薄明之中、包裹于氤氳的未知的迷霧之中。它不能不躲藏起來。
+    </div>
+    <button onclick="startQuiz()">開始</button>
+  </div>
+
+  <!-- 答题区 -->
+  <div id="quiz-section">
+    <div class="progress" id="progress-text">第 1 / 4 题</div>
+    <div class="question" id="question-text"></div>
+    <div id="options-container"></div>
+  </div>
+
+  <!-- 结果区 -->
+  <div id="result-section">
+    <h2>测试完成！</h2>
+    <img id="result-image" src="" style="width: 100%; max-width: 400px; height: auto; display: block; margin: 20px auto; border-radius: 10px;">
+    <div class="result-title" id="result-name"></div>
+    <div class="desc" id="result-desc"></div>
+    <button onclick="location.reload()" style="font-size: 16px; padding: 10px 20px; margin-top:20px;">重新测试</button>
+  </div>
+</div>
+
+<!-- 这里引入 JS 文件，放在 body 最下面保证页面加载完再执行 -->
+<script src="script.js"></script>
+
+</body>
+</html>
